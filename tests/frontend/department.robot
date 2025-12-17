@@ -23,6 +23,7 @@ CT01 - Criar um departamento com sucesso
     Capture Page Screenshot
     Selecionar o centro de custo   
     Clicar no botão salvar
+    Clicar no botão logout
     Capture Page Screenshot
 
 CT02 - Editar um departamento com sucesso
@@ -47,4 +48,5 @@ CT02 - Editar um departamento com sucesso
     Selecionar o centro de custo
     Capture Page Screenshot
     Clicar no botão salvar
+    Clicar no botão logout
     Capture Page Screenshot
