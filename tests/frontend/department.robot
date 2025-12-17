@@ -23,6 +23,7 @@ CT01 - Criar um departamento com sucesso
     Capture Page Screenshot
     Selecionar o centro de custo   
     Clicar no botão salvar
+    Validar departamento salvo com sucesso
     Clicar no botão logout
     Capture Page Screenshot
 
@@ -48,5 +49,20 @@ CT02 - Editar um departamento com sucesso
     Selecionar o centro de custo
     Capture Page Screenshot
     Clicar no botão salvar
-    Clicar no botão logout
+    Validar departamento salvo com sucesso
     Capture Page Screenshot
+
+CT03 - Não permitir salvar departamento sem nome
+  [Tags]    department    empty    regression
+    Acessar a página de login do Academy
+    Digitar email
+    Digitar senha
+    Clicar no botão entrar
+    Clicar em cadastros
+    Ignorando Popup Do Chrome
+    Clicar em departamento
+    Clicar no botão novo departamento
+    Clicar no botão salvar
+    Capture Page Screenshot
+    Validar departamento obrigatorio
+    Capture Page Screenshot 

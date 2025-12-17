@@ -7,6 +7,7 @@ Library    Collections
 ### RESOURCES ###
 Resource    ./variables.resource
 Resource    ./frontend.resource
+Resource    ./data_factory.resource
 
 ### VARIABLES ###
 Variables    ../fixtures/environments.yaml
