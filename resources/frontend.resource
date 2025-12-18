@@ -163,11 +163,16 @@ Clicar em centro de custo
     Wait Until Element Is Visible    ${Academy.btn_cost_center}    timeout=40s
     Click Element    ${Academy.btn_cost_center}
 
+Clicar no botão novo centro de custo
+    Wait Until Element Is Visible    ${Academy.btn_new_cost_center}    timeout=40s
+    Click Button   ${Academy.btn_new_cost_center}
+    
 Digitar o nome de um centro de custo
-    Criar uma nova diretoria
-    Criar um novo centro de custo
-    Wait Until Element Is Visible    ${Academy.input_cost_center}    timeout=40s
-    Input Text    ${Academy.input_cost_center}    ${COST_CENTER_NAME}
+    Wait Until Element Is Visible    ${Academy.input_new_cost_center}    timeout=40s
+    ${index}=    Evaluate    random.randint(0, len($COST_CENTER_NAME)-1)    random
+    ${random_cost_center}=    Set Variable    ${COST_CENTER_NAME}[${index}]
+    Input Text    ${Academy.input_new_cost_center}    ${random_cost_center}
+    Set Suite Variable    ${random_cost_center}   ${RANDOM_COST_CENTER}
 
 #DEPARTAMENT
 Clicar em departamento
