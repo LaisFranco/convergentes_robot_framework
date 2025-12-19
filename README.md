@@ -1,4 +1,4 @@
-### Projeto de automação com Robot Framework WEB/API ###
+### Projeto de automação com Robot Framework WEB ###
 Projeto de automação baseado em boas práticas utilizando o Robot Framework
 
 ## RECURSOS NECESSÁRIOS ##
@@ -40,15 +40,10 @@ automacao_robot/
 |-- |-- frontend.resource
 |-- |-- variables.resource
 |-- tests/
-|-- |-- api/
-|-- |-- |-- board.robot
-|-- |-- |-- cost_center.robot
-|-- |-- |-- department.robot
-|-- |-- |-- login.robot
-|-- |-- |-- user.robot
 |-- |-- frontend/
 |-- |-- |-- board.robot
 |-- |-- |-- cost_center.robot
+|-- |-- |-- department.robot
 |-- |-- |-- login.robot
 |-- |-- |-- user.robot
 |-- .gitignore
@@ -76,6 +71,21 @@ automacao_robot/
 
 ### requirements.txt ###
 - O `requirements.txt` é fundamental para a instalação das dependências do projeto, garantindo que qualquer pessoa possa configurar o mesmo ambiente de desenvolvimento de forma rápida e fácil.
+
+### Executar os testes
+
+- Executar os testes do projeto:
+  - Executar apenas cenários específicos utilizando tag:
+    ```bash
+    robot -d logs --include create tests/frontend/department.robot
+    ```
+    > Informe a tag correspondente ao cenário que deseja executar.
+    
+  - Executar todos os testes do projeto:
+    ```bash
+    robot -d logs tests/
+    ```
+
 
 ### autores ###
 Adriana Bicalho
